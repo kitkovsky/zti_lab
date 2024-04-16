@@ -57,6 +57,7 @@ html {
   scroll-padding-top: 6rem;
   overflow-x: hidden;
   color: var(--white);
+  background: #fffbeb;
 }
 
 section {
@@ -78,16 +79,13 @@ section {
 }
 
 header {
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
-  right: 0;
-  background: #fff;
+  background: #fffbeb;
   padding: 2rem 9%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 1000;
 }
 
 header .logo {
@@ -117,7 +115,7 @@ header .fa-bars {
 .home {
   display: flex;
   align-items: center;
-  min-height: 100vh;
+  min-height: calc(100vh - 236px);
   background: url(../images/home.jpeg) no-repeat;
   background-size: cover;
   background-position: center;
@@ -229,4 +227,22 @@ header .fa-bars {
 footer {
   background-color: var(--amber700);
   padding: 1rem 0.75rem;
+}
+
+/* buy */
+.buy {
+  background-color: var(--amber700);
+  min-height: calc(100vh - 236px);
+
+  .providers {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    width: fit-content;
+    align-items: center;
+
+    img {
+      height: fit-content;
+    }
+  }
 }
