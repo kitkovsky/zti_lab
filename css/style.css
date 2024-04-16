@@ -224,3 +224,9 @@ header .fa-bars {
     }
   }
 }
+
+/* footer */
+footer {
+  background-color: var(--amber700);
+  padding: 1rem 0.75rem;
+}
