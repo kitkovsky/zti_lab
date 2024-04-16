@@ -1,15 +1,47 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
 :root {
   --orange: #fca115;
 }
-/* { */
-/*     margin: 0; padding: 0; */
-/*     box-sizing: border-box; */
-/*     font-family: Verdana, Geneva, Tahoma, sans-serif; */
-/*     outline: none; border: none; */
-/*     text-decoration: none; */
-/*     text-transform: capitalize; */
-/*     transition: .2s linear; */
-/* } */
 
 html {
   font-size: 75%;
@@ -73,52 +105,6 @@ header .fa-bars {
   cursor: pointer;
   border: 0.1rem solid rgba(0, 0, 0, 0.3);
   display: none;
-}
-/*media queries */
-@media (max-width: 991px) {
-  html {
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-    scroll-padding-top: 6rem;
-    overflow-x: hidden;
-  }
-  header {
-    padding: 2rem;
-  }
-  section {
-    padding: 2rem;
-  }
-  .home {
-    background-position: left;
-  }
-  header .navbar {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: #eee;
-    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  }
-  header #toggler:checked ~ .navbar {
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  }
-  header .navbar a {
-    margin: 1.5rem;
-    padding: 1.5rem;
-    background: #fff;
-    border: 0.1rem solid rgba(0, 0, 0, 0.1);
-    display: block;
-  }
-  .home .content h3 {
-    font-size: 5rem;
-  }
-  .home .content h3 {
-    font-size: 5rem;
-  }
-  .home .content span {
-    font-size: 2.5rem;
-  }
 }
 
 .home {
