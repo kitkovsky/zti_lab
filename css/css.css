@@ -1,6 +1,6 @@
 /* General styles */
 body {
-  font-family: 'Font Awesome', sans-serif; /* Ustawienie czcionki Font Awesome dla całego tekstu na stronie */
+  font-family: "Font Awesome", sans-serif; /* Ustawienie czcionki Font Awesome dla całego tekstu na stronie */
   line-height: 1.5;
   background-color: var(--black);
   margin: 0;
@@ -40,7 +40,7 @@ header .logo img {
 }
 
 header .logo span {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 2rem;
   color: var(--orange); /* Dodane: zmiana koloru napisu na pomarańczowy */
 }
