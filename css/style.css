@@ -39,15 +39,23 @@ h6 {
   overflow-wrap: break-word;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 :root {
   --orange: #fca115;
+  --white: #fef3c7;
+  --amber500: #f59e0b;
+  --amber600: #d97706;
 }
 
 html {
-  font-size: 75%;
   scroll-behavior: smooth;
   scroll-padding-top: 6rem;
   overflow-x: hidden;
+  color: var(--white);
 }
 
 section {
@@ -55,18 +63,17 @@ section {
 }
 
 .btn {
-  display: inline-block;
-  margin-top: 1rem;
-  border-radius: 5rem;
-  background: #333333;
-  color: blanchedalmond;
-  padding: 3rem 2rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--amber500);
+  border-radius: 0.5rem;
   cursor: pointer;
-  font-size: 1.7rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .btn:hover {
-  background: var(--orange);
+  background: var(--amber600);
 }
 
 header {
@@ -80,7 +87,6 @@ header {
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
-  box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 header .logo {
@@ -118,6 +124,23 @@ header .fa-bars {
 
 .home .content {
   max-width: 50rem;
+  background-color: #b45309;
+  padding: 2rem;
+  border-radius: 0.5rem;
+
+  h2 {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+  }
+
+  a {
+    font-size: 1.5rem;
+  }
 }
 
 .home .content h3 {
@@ -137,4 +160,19 @@ header .fa-bars {
   color: #fcdd15;
   padding: 1rem 0;
   line-height: 1.5;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  gap: 2rem;
+
+  a {
+    font-size: 2rem;
+  }
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
 }
