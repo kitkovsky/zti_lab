@@ -49,6 +49,7 @@ a {
   --white: #fef3c7;
   --amber500: #f59e0b;
   --amber600: #d97706;
+  --amber700: #b45309;
 }
 
 html {
@@ -124,7 +125,7 @@ header .fa-bars {
 
 .home .content {
   max-width: 50rem;
-  background-color: #b45309;
+  background-color: var(--amber700);
   padding: 2rem;
   border-radius: 0.5rem;
 
@@ -175,4 +176,13 @@ header .fa-bars {
 .icons {
   display: flex;
   gap: 1rem;
+}
+
+/* about */
+.about {
+  background-color: var(--amber700);
+}
+
+.container {
+  height: 40rem;
 }
